@@ -1,0 +1,16 @@
+
+numpy
+tensorflow>=2.13.0
+joblib
+flask
+flask-cors
+scikit-learn
+pillow
+pandas
+matplotlib
+openpyxl
+python-dotenv
+requests
+openai>=1.0.0
+beautifulsoup4
+lxml
