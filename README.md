@@ -32,3 +32,49 @@ This project integrates machine learning models for diabetes prediction with a R
 ├── package.json                   # Frontend dependencies
 └── ...
 ```
+
+## Setting Up the Python Backend
+
+1. Install Python 3.11.5+ if not already installed.
+2. Navigate to the api directory:
+   ```
+   cd api
+   ```
+3. Create a virtual environment:
+   ```
+   python -m venv venv
+   ```
+4. Activate the virtual environment:
+   - On Windows: `venv\Scripts\activate`
+  
+5. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+6. Start the Flask API servers:
+   - For clinical prediction:
+     ```
+     python predict_clinical.py
+     ```
+   - For ECG image prediction (in a separate terminal):
+     ```
+     python predict_image.py
+     ```
+   - For the GDM Chatbot (in a separate terminal):
+     ```
+     python chatbot.py
+     ```
+
+## Setting Up the React Frontend
+
+1. Install Node.js 18+ if not already installed.
+2. Navigate to the project root directory.
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
