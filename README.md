@@ -78,3 +78,31 @@ This project integrates machine learning models for diabetes prediction with a R
    ```
    npm run dev
    ```
+
+## Clinical Data Prediction
+
+In the clinical prediction model:
+- GDM (Gestational Diabetes Mellitus) is mapped to 1
+- Non-GDM is mapped to 0
+
+This binary classification helps in clear risk assessment and interpretation of results.
+
+## GDM Chatbot
+The project includes an AI-powered chatbot that can answer questions about Gestational Diabetes Mellitus (GDM). The chatbot has two operation modes:
+
+1. **AI API Mode**: When the OpenAI API key is configured in the `.env` file, the chatbot uses the GPT-4o model to provide accurate and detailed responses about GDM.
+
+2. **Web Scraping Mode**: When the OpenAI API key is not available, the chatbot automatically falls back to web scraping to find relevant information about GDM. This mode includes:
+   - A built-in knowledge base for common GDM questions
+   - Dynamic web scraping for more specific inquiries
+   - Formatted responses with source attribution
+
+### Setting up the Chatbot
+
+1. For AI API Mode (recommended):
+   - Create a `.env` file in the `api` directory.
+   - Add your OpenAI API key: `OPENAI_API_KEY=your_api_key_here`
+
+2. For Web Scraping Mode:
+   - No additional setup required. If the API key is missing, the chatbot will automatically use the knowledge base and web scraping.
+
